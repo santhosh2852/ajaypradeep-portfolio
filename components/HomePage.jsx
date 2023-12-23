@@ -7,7 +7,11 @@ import FollowMe from './FollowMe'
 const HomePage = () => {
   return (
     <>
-      <div className='bg-white text-center pt-[100px] select-none'>
+      <Image className='ml-auto mr-auto flex pt-10' draggable='false' src='/Black_Logo.png'
+      width={150}
+      height={150}
+      />
+      <div className='bg-white text-center pt-[80px] select-none'>
         <span className='text-6xl text-black font-semibold'>Welcome to Ajay Pradeep Portfolio</span><br/><br/>
         <span className='text-2xl'>Hr Recruiter | Training & Placement |Branding | Man Power Supply<br/>| Rotaract Leader| Insta Host</span>
       </div>
@@ -20,8 +24,8 @@ const HomePage = () => {
         /><br/>
         <span className='w-full h-auto text-black text-xl pt-0 flex text-center items-center justify-center'>Experienced Founder with a demonstrated history of working in the human resources industry. Skilled in HR Consulting, Microsoft Word, Customer Relationship Management (CRM), Team Building, and Technical Recruiting. Strong business development professional with a Bachelor’s Degree focused in Business Administration and Management, General from Alpha Arts And Science College.</span>
       </div>
-      <PictureOnTraining/>
-      <FollowMe/>
+      <PictureOnTraining/><br/>
+      <FollowMe/><br/>
     </>
   )
 }

@@ -5,7 +5,7 @@ import React from 'react'
 const NavBar = () => {
   return (
     <div className=''>
-        <nav className='flex justify-center items-center list-none text-3xl text-white bg-black w-full h-full pt-10 gap-[100px] text-center select-none'>
+        <nav className='flex justify-center items-center list-none text-3xl text-white bg-black w-full h-full pt-10 gap-[100px] text-center select-none mr-auto ml-auto'>
             <li>EXPERIENCE</li>
             <li>AWARDS</li>
             <li>HOME</li>
