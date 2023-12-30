@@ -6,6 +6,10 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+    },
     extend: {
       colors: {
         'smoke-white': '#f5f5f5',
