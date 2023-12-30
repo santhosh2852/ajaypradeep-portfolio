@@ -11,8 +11,8 @@ const FollowMe = () => {
       /><br/>
     <div className='flex select-none'>
         <Image src='/Black_Logo.png' className='hidden md:block pl-5 ' draggable='false'
-          width={170}
-          height={20}
+          width={160}
+          height={10}
         />
         <ul className=' text-black text-sm gap-10 flex text-center justify-center items-center ml-auto mr-auto cursor-pointer'>
           <li>Experience</li>

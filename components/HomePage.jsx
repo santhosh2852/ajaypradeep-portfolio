@@ -6,8 +6,8 @@ import PictureOnTraining from './PictureOnTraining'
 import FollowMe from './FollowMe'
 const HomePage = () => {
   return (
-    <div className='md:w-full'>
-      <Image className='ml-auto mr-auto flex pt-10 md:ml-auto md:mr-auto md:min-w-max' draggable='false' src='/Black_Logo.png'
+    <div className=''>
+      <Image className='ml-auto mr-auto flex pt-[150px] md:ml-auto md:mr-auto ' draggable='false' src='/Black_Logo.png'
       width={150}
       height={150}
       />

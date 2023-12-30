@@ -41,13 +41,18 @@ export default class CustomArrows extends Component {
     const settings = {
       dots: true,
       infinite: true,
+      speed: 1000, // Duration for each slide transition (in milliseconds)
+    autoplay: true, // Enables autoplay
+    autoplaySpeed: 3000, 
       slidesToShow: 1,
       slidesToScroll: 1,
+      prevArrow: <div />, // Rendering an empty div to hide the previous arrow
+    nextArrow: <div />, // Rendering an empty div to hide the next arrow
     };
     return (
       <div className='pt-2'>
         <h1 className='bg-[url(https://www.apple.com/careers/images/fy21/apple_jobs_gradient_final_Apple_Jobs_Gradients_Full_Large/desktop@2x.png)] bg-cover bg-clip-text text-transparent text-4xl font-semibold text-center pt-10 '>Picture On Training</h1>
-        {/* <Slider {...settings} className='pt-10'>
+        <Slider {...settings} className='pt-10 relative'>
           <div>
             <Image src='/pic1.jpg' className='mr-auto ml-auto flex'
               height={500}
@@ -72,7 +77,7 @@ export default class CustomArrows extends Component {
               width={500}
             />
           </div>
-        </Slider> */}
+        </Slider>
       </div>
     );
   }
