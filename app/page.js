@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className=''>
       <NavBar/>
-      {/* <HomePage/> */}
-      <ExperiencePage/>
+      <HomePage/>
+      {/* <ExperiencePage/> */}
     </div>
   )
 }
