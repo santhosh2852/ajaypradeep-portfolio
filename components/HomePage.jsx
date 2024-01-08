@@ -4,9 +4,20 @@ import ResumeButton from './ResumeButton'
 import Image from 'next/image'
 import PictureOnTraining from './PictureOnTraining'
 import FollowMe from './FollowMe'
+import { motion } from "framer-motion"
 const HomePage = () => {
+  const verticalVariants = {
+    hidden: { opacity: 0, y: -50 }, // Initial state: hidden, moved up 50px
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } }, // Visible state: fully visible, at the original y position
+  };
   return (
-    <div className=''>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={verticalVariants}
+      style={{ width: '100%', height: '100vh', backgroundColor: '#f0f0f0' }}
+    >
+    <div className='bg-white'>
       <Image className='ml-auto mr-auto flex pt-[150px] md:ml-auto md:mr-auto ' draggable='false' src='/Black_Logo.png'
       width={150}
       height={150}
@@ -27,6 +38,7 @@ const HomePage = () => {
       <PictureOnTraining/><br/>
       <FollowMe/><br/>
     </div>
+    </motion.div>
   )
 }
 

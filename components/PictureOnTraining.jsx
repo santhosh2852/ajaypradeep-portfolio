@@ -1,5 +1,5 @@
 'use client'
-import React, { Component } from 'react'
+import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 // Default theme
 // import '@splidejs/splide/css';
@@ -26,18 +26,25 @@ import Image from 'next/image'
 
 // // or only core styles
 // import '@splidejs/splide/css/core';
-import { Splide,SplideTrack, SplideSlide } from '@splidejs/react-splide';
-// Default theme
-import '@splidejs/react-splide/css';
+// import { Splide,SplideTrack, SplideSlide } from '@splidejs/react-splide';
+// // Default theme
+// import '@splidejs/react-splide/css';
 
 
-// or other themes
-import '@splidejs/react-splide/css/skyblue';
-import '@splidejs/react-splide/css/sea-green';
+// // or other themes
+// import '@splidejs/react-splide/css/skyblue';
+// import '@splidejs/react-splide/css/sea-green';
 
 
 // or only core styles
-import '@splidejs/react-splide/css/core';
+// import '@splidejs/react-splide/css/core';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import './styles.css';
+import { Pagination, Navigation } from 'swiper/modules';
 const PictureOnTraining = () => {
   // const splideOptions = {
   //   type: 'slide', // Choose between 'slide' or 'loop' or other options
@@ -67,42 +74,32 @@ const PictureOnTraining = () => {
   //   };
   // }, []);
   return (
-      <div className='pt-2 '>
-        <h1 className='bg-[url(https://www.apple.com/careers/images/fy21/apple_jobs_gradient_final_Apple_Jobs_Gradients_Full_Large/desktop@2x.png)] bg-cover bg-clip-text text-transparent text-4xl font-semibold text-center pt-10 '>Picture On Training</h1>
+      <div className='pt-2 bg-white'>
+        <h1 className='bg-[url(https://www.apple.com/careers/images/fy21/apple_jobs_gradient_final_Apple_Jobs_Gradients_Full_Large/desktop@2x.png)] bg-cover bg-clip-text text-transparent text-4xl font-semibold text-center pt-10 pb-10'>Picture On Training</h1>
         {/* <Splide options={splideOptions} className="absolute" > */}
-        <Splide options={ {
-        type         : 'loop',
-        gap          : '5rem',
-        autoplay     : true,
-        pauseOnHover : false,
-        resetProgress: false,
-        height       : '50%',
-        focus    : 'center',
-        width     : '100%'
-      } } hasTrack={ false } aria-label="My Favorite Images" className='' >
-        <div className="custom-wrapper flex justify-center items-center mx-auto text-center m-0">
-        <SplideTrack>
-          <SplideSlide>
-            <img src="pic1.jpg" alt="Slide 1" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="pic2.jpg" alt="Slide 2" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="pic3.jfif" alt="Slide 2" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="pic4.jfif" alt="Slide 2" />
-          </SplideSlide>
-          </SplideTrack>
-          {/* <div className="splide__arrows">
-            <button className="splide__arrow splide__arrow--prev">Prev</button>
-            <button className="splide__arrow splide__arrow--next">Next</button>
-          </div> */}
-          <div className="splide__arrows" />
-          {/* Add more SplideSlides for additional slides */}
-          </div>
-        </Splide>
+        <Swiper
+        loop={true}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        autoplay={{
+          delay: 3000, // Set the delay between slides (in milliseconds)
+          disableOnInteraction: false, // Continue autoplay even when the user interacts with slides
+        }}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        <img src="pic1.jpg" alt="Slide 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="pic2.jpg" alt="Slide 2" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="pic3.jfif" alt="Slide 2" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="pic4.jfif" alt="Slide 2" />
+        </SwiperSlide>
+      </Swiper>
       </div>
     );
 }
