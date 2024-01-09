@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div className=''>
       <NavBar/>
-      <HomePage/>
+      {/* <HomePage/> */}
       {/* <ExperiencePage/> */}
-      {/* <ContactForm/> */}
+      <ContactForm/>
     </div>
   )
 }

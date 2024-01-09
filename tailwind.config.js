@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       colors: {
         'smoke-white': '#f5f5f5',
+        'background-box':'10px 10px 10px 10px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
