@@ -10,10 +10,10 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
     },
+'background-box':'10px 10px 10px 10px',
     extend: {
       colors: {
         'smoke-white': '#f5f5f5',
-        'background-box':'10px 10px 10px 10px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

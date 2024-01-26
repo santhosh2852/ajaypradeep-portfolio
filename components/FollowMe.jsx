@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 const FollowMe = () => {
   return (
-    <>
+    <div className='bg-white w-screen bg-cover'>
     <h1 className='md:text-3xl text-black font-semibold pl-5 select-none text-2xl'>Follow Me</h1><br/>
     <Image src='/Black_Logo.png' className='block md:hidden pl-5 ml-auto mr-auto' draggable='false'
           width={60}
@@ -47,9 +47,9 @@ const FollowMe = () => {
           <a href='https://www.facebook.com/ajaypradeep.kk' target='_blank'><Image draggable='false' src='/facebook.png'
             width={32}
             height={32}
-          /></a>
+          /></a><br/><br/>
         </div>
-    </>
+    </div>
   )
 }
 

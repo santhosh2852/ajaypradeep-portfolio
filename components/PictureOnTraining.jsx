@@ -46,33 +46,6 @@ import 'swiper/css/navigation';
 import './styles.css';
 import { Pagination, Navigation } from 'swiper/modules';
 const PictureOnTraining = () => {
-  // const splideOptions = {
-  //   type: 'slide', // Choose between 'slide' or 'loop' or other options
-  //   perPage: 1, // Number of slides per view
-  //   pagination: false, // Show pagination or not
-  //   // Add more options as needed based on Splide.js documentation
-  //   loop: true, // Enables continuous loop
-  //   autoplay: true, // Enable autoplay
-  //   interval: 5000, // Set interval in milliseconds (5 seconds in this case)
-  //   arrows: false, // Enable arrows
-  // };
-  // useEffect(() => {
-  //   const splide = new Splide('.splide', splideOptions);
-
-  //   splide.on('moved', () => {
-  //     const { index, length } = splide.Components.Elements;
-  //     if (index === length - 1) {
-  //       // Reached the last slide, move to the first slide to create a loop
-  //       splide.go(0);
-  //     }
-  //   });
-
-  //   splide.mount();
-
-  //   return () => {
-  //     splide.destroy(); // Cleanup when component unmounts
-  //   };
-  // }, []);
   return (
       <div className='pt-2 bg-white'>
         <h1 className='bg-[url(https://www.apple.com/careers/images/fy21/apple_jobs_gradient_final_Apple_Jobs_Gradients_Full_Large/desktop@2x.png)] bg-cover bg-clip-text text-transparent text-4xl font-semibold text-center pt-10 pb-10'>Picture On Training</h1>
