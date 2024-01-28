@@ -10,17 +10,11 @@ const FollowMe = () => {
           height={50}
       /><br/>
     <div className='flex select-none'>
-        <Image src='/Black_Logo.png' className='hidden md:block pl-5 ' draggable='false'
+        <Image src='/Black_Logo.png' className='hidden md:block pl-5 items-start justify-end' draggable='false'
           width={160}
           height={10}
         />
-        <ul className=' text-black text-sm gap-10 flex text-center justify-center items-center ml-auto mr-auto cursor-pointer'>
-          <li>Experience</li>
-          <li>Awards</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-        <div className='hidden md:block list-none pr-10 cursor-pointer'>
+        <div className='hidden md:block list-none pr-10 cursor-pointer items-end justify-end w-screen'>
           <a href='https://instagram.com/rtrajaypradeepaj?igshid=znhp2yq09ede' target='_blank'><Image draggable='false' src='/instagram.png'
             width={30}
             height={30}

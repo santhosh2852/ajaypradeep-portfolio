@@ -1,22 +1,23 @@
 'use client'
 
 import Image from 'next/image'
-import NavBar from '@/components/NavBar'
-import HomePage from '@/components/HomePage'
-import ExperiencePage from '@/components/ExperiencePage'
-import ContactForm from '@/components/ContactForm'
+// import NavBar from '/NavBar'
+import NavBar from './NavBar/page'
+import HomePage from '@/app/HomePage/page'
+import ExperiencePage from '@/app/ExperiencePage/page'
+import ContactForm from '@/app/ContactForm/page'
 import FollowMe from '@/components/FollowMe'
-import AwardPage from '@/components/AwardPage'
-import AboutUs from '@/components/AboutUs'
+import AwardPage from '@/app/AwardPage/page'
+import AboutUs from '@/app/AboutUs/page'
 export default function Home() {
   return (
     <div className=''>
-      <NavBar/>
-      {/* <HomePage/> */}
+      {/* <NavBar/> */}
+      <HomePage/>
       {/* <ExperiencePage/> */}
       {/* <ContactForm/> */}
       {/* <AwardPage/> */}
-      <AboutUs/>
+      {/* <AboutUs/> */}
       {/* <FollowMe/> */}
     </div>
   )

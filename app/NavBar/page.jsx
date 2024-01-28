@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import HomePage from './HomePage';
-import ExperiencePage from './ExperiencePage';
-import ContactForm from './ContactForm';
-import AwardPage from './AwardPage';
-import AboutUs from './AboutUs';
+import HomePage from '@/app/HomePage/page';
+import ExperiencePage from '@/app/ExperiencePage/page';
+import ContactForm from '@/app/ContactForm/page';
+import AwardPage from '@/app/AwardPage/page';
+import AboutUs from '@/app/AboutUs/page';
 import Link from 'next/link'
 import Image from 'next/image'
 const NavBar = () => {

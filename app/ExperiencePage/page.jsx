@@ -2,17 +2,21 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import NavBar from '@/components/NavBar'
+// import NavBar from '@/components/NavBar'
 // Import Swiper styles
+import NavBar from '../NavBar/page';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import FollowMe from '@/components/FollowMe';
 import './styles1.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
 const ExperiencePage = () => {
   return (
+    <div>
+      <NavBar/>
+    
     <div className='w-screen bg-white bg-cover h-[100vh]'>
       
       <p>
@@ -57,6 +61,8 @@ Soft skill training given to GITAM University Hyderabad.
 Soft skill training given to Andhra Loyola College, Vijayawada
 Activity based coaching given to proto D Employees.
       </p>
+    </div>
+    <FollowMe/>
     </div>
   )
 }

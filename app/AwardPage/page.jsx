@@ -1,13 +1,16 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion"
-
+import NavBar from '../NavBar/page'
+import FollowMe from '@/components/FollowMe'
 const AwardPage = () => {
   const verticalVariants = {
     hidden: { opacity: 0, y: -50 }, // Initial state: hidden, moved up 50px
     visible: { opacity: 1, y: 0, transition: { duration: 1 } }, // Visible state: fully visible, at the original y position
   };
   return (
+    <div>
+      <NavBar/>
     <motion.div
       initial="hidden"
       animate="visible"
@@ -68,6 +71,8 @@ const AwardPage = () => {
           </div>
       </div>
     </motion.div>
+    <FollowMe/>
+    </div>
   )
 }
 
