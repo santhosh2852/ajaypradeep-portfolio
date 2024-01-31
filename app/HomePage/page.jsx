@@ -1,11 +1,10 @@
 'use client'
 import React from 'react'
-import ResumeButton from '../../components/ResumeButton'
+import ResumeButton from '../ResumeButton/page'
 import Image from 'next/image'
 import PictureOnTraining from '../../components/PictureOnTraining'
 import { motion } from "framer-motion"
 import NavBar from '../NavBar/page'
-import FollowMe from '@/components/FollowMe'
 const HomePage = () => {
   const verticalVariants = {
     hidden: { opacity: 0, y: -50 }, // Initial state: hidden, moved up 50px
@@ -41,7 +40,6 @@ const HomePage = () => {
         <PictureOnTraining/><br/>
       </div>
       </motion.div>
-      <FollowMe/>
     </div>
   )
 }

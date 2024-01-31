@@ -2,7 +2,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import NavBar from '../NavBar/page'
-import FollowMe from '@/components/FollowMe'
 const AwardPage = () => {
   const verticalVariants = {
     hidden: { opacity: 0, y: -50 }, // Initial state: hidden, moved up 50px
@@ -71,7 +70,6 @@ const AwardPage = () => {
           </div>
       </div>
     </motion.div>
-    <FollowMe/>
     </div>
   )
 }

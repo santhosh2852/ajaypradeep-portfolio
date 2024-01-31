@@ -9,14 +9,13 @@ import './styles.css';
 import { Pagination, Navigation } from 'swiper/modules';
 import CountUp from 'react-countup';
 import NavBar from '../NavBar/page';
-import FollowMe from '@/components/FollowMe';
 const AboutUs = () => {
     const verticalVariants = {
         hidden: { opacity: 0, y: -50 }, // Initial state: hidden, moved up 50px
         visible: { opacity: 1, y: 0, transition: { duration: 1 } }, // Visible state: fully visible, at the original y position
       };
   return (
-    <div className='w-screen overflow-x-hidden select-none bg-cover bg-white'>
+    <div className='w-screen overflow-x-hidden select-none bg-cover bg-white pb-60'>
         <NavBar/>
     <div className=''>
         <div className='pt-10 mx-auto'><br/><br/><br/><br/><br/><br/>
@@ -92,7 +91,6 @@ const AboutUs = () => {
             </Swiper>
             </motion.div>
     </div>
-    <FollowMe/>
     </div>
   )
 }
