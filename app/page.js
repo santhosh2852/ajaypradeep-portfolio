@@ -6,7 +6,7 @@ import NavBar from './NavBar/page'
 import HomePage from '@/app/HomePage/page'
 import ExperiencePage from '@/app/ExperiencePage/page'
 import ContactForm from '@/app/ContactForm/page'
-import FollowMe from '@/app/FollowMe/page'
+// import FollowMe from '@/app/FollowMe/page'
 import AwardPage from '@/app/AwardPage/page'
 import AboutUs from '@/app/AboutUs/page'
 export default function Home() {
