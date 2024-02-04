@@ -62,26 +62,26 @@ const PictureOnTraining = () => {
       >
         <SwiperSlide>
         <Image src="pic1.jpg" alt="Slide 1" 
-        width={60}
-        height={60}
+        width={100}
+        height={100}
         />
         </SwiperSlide>
         <SwiperSlide>
           <Image src="pic2.jpg" alt="Slide 2"
-          width={60}
-          height={60}
+          width={100}
+          height={100}
           />
         </SwiperSlide>
         <SwiperSlide>
         <Image src="pic3.jfif" alt="Slide 2"
-        width={60}
-        height={60}
+        width={100}
+        height={100}
         />
         </SwiperSlide>
         <SwiperSlide>
           <Image src="pic4.jfif" alt="Slide 2"
-          width={60}
-          height={60}
+          width={100}
+          height={100}
           />
         </SwiperSlide>
       </Swiper>
