@@ -61,16 +61,28 @@ const PictureOnTraining = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-        <img src="pic1.jpg" alt="Slide 1" />
+        <Image src="pic1.jpg" alt="Slide 1" 
+        width={60}
+        height={60}
+        />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="pic2.jpg" alt="Slide 2" />
+          <Image src="pic2.jpg" alt="Slide 2"
+          width={60}
+          height={60}
+          />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="pic3.jfif" alt="Slide 2" />
+        <Image src="pic3.jfif" alt="Slide 2"
+        width={60}
+        height={60}
+        />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="pic4.jfif" alt="Slide 2" />
+          <Image src="pic4.jfif" alt="Slide 2"
+          width={60}
+          height={60}
+          />
         </SwiperSlide>
       </Swiper>
       </div>

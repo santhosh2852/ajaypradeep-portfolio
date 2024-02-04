@@ -23,6 +23,7 @@ const HomePage = () => {
         <Image className='ml-auto mr-auto flex pt-[150px] md:ml-auto md:mr-auto' draggable='false' src='/Black_Logo.png'
         width={150}
         height={150}
+        alt='Logo'
         />
         <div className='bg-white text-center pt-[80px] select-none'>
           <span className='md:text-6xl text-black font-semibold text-3xl text'>Welcome to Ajay Pradeep Portfolio</span><br/><br/>
@@ -34,6 +35,7 @@ const HomePage = () => {
           src='/CubeImage.png'
           width={70}
           height={70}
+          alt='cube'
           /><br/>
           <span className='w-full h-auto text-black md:text-xl pt-0 flex text-center items-center justify-center '>Experienced Founder with a demonstrated history of working in the human resources industry. Skilled in HR Consulting, Microsoft Word, Customer Relationship Management (CRM), Team Building, and Technical Recruiting. Strong business development professional with a Bachelor’s Degree focused in Business Administration and Management, General from Alpha Arts And Science College.</span>
         </div>
