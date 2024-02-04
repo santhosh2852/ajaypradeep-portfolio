@@ -215,7 +215,7 @@ const ExperiencePage = () => {
           <div className="mb-8 flex justify-between items-center w-full left-timeline">
             <div className="order-1 w-5/12"></div>
             <div className="order-1 w-5/12 px-4 py-2 bg-gray-800 text-white rounded-lg shadow-xl">
-            Importance of garbage segregation taught to St John's matric higher secondary school,Alwarthirunagar.
+            Importance of garbage segregation taught to St John&apos;s matric higher secondary school,Alwarthirunagar.
             </div>
           </div>
           <div className="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline">
